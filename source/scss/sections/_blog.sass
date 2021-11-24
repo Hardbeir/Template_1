@@ -1,0 +1,49 @@
+.blog
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+        width: 31%
+    &__header
+        position: relative
+        margin-bottom: 14px
+    &__content
+        margin-bottom: 14px
+    &__photo
+        display: block
+        max-width: 100%
+        height: auto
+    &__date
+        padding: 10px 20px
+        font-weight: 300
+        text-align: center
+        background-color: $cl_stat
+        font-size: 15px
+        font-style: italic
+        position: absolute
+        bottom: 10px
+        left: -10px
+        z-index: 2
+        &-day
+            font-size: 30px
+            font-weight: 700
+            font-style: normal
+            line-height: 1
+    &__title 
+        margin-bottom: 10px
+        & a 
+            &:hover 
+                text-decoration: underline
+    &__footer
+        margin-top: 14px
+        border-top: 1px solid $color_text
+        font-size: 15px
+        font-style: italic
+        font-weight: 300
+    &-stat
+        &__item
+            display: inline-block
+            vertical-align: top
+            margin-right: 10px
+            & i
+                color: $cl_stat

@@ -1,0 +1,22 @@
+
+@import "style-none.sass";
+
+$sz: 30px
+
+%tplborder
+    border-bottom: 5px dashed red
+
+@mixin fontz($f)
+    font-size: $f
+     
+
+.block
+    padding: $sz
+    font-size: 50px
+    line-height: 60px
+    @include fontz('100px')
+    &__text
+        font-size: 21px
+    @extend  %tplborder
+    
+

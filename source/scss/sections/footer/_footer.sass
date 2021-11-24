@@ -1,0 +1,45 @@
+.footer
+    padding-top: 65px
+    background-color: gray 
+    &__inner 
+        padding-bottom: 65px
+        display: flex
+        flex-wrap: wrap 
+        justify-content: space-between
+        margin: 0 -15px
+        padding-bottom: 65px
+    &__col 
+        padding: 0 15px
+        &--social
+            width: 40%
+        &--blog
+            width: 29%
+        &--inst 
+            width: 22%
+    &__logo
+        font-size: 46px
+        margin-bottom: 30px
+    &__title
+        padding: 20px
+    &__text
+        margin-bottom: 30px
+    &__social
+        margin-bottom: 25px
+        &-header
+            padding-bottom: 15px
+            font-size: 14px
+            border-bottom: 1px solid $cl_stat
+            & b
+                font-size: 18px
+                font-weight: 700
+        &-content 
+            padding-top: 15px
+            font-style: italic 
+            & a 
+                color: $cl_stat
+                font-size: 20px
+                display: inline-block
+                vertical-align: middle
+                margin-left: 10px
+                &:hover
+                    color: $color_text

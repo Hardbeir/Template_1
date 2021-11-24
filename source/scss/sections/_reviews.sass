@@ -1,0 +1,62 @@
+.reviews
+    position: relative
+    & .slick-slider
+        padding: 0 110px
+    &__item
+        padding-left: 255px
+        min-height: 215px
+        position: relative
+    &__photo
+        display: block
+        width: 210px
+        height: 210px
+        border: 2px solid $cl_stat
+        border-radius: 50%
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 2
+    &__text
+        font-size: 24px
+        font-weight: 300 
+        font-style: italic
+        margin-bottom: 15px
+    &__author
+        font-size: 24px
+        &:before
+            content: ""
+            display: inline-block
+            vertical-align: middle
+            width: 60px
+            height: 3px
+            margin-right: 10px
+            background-color: $cl_stat
+.slick-arrow
+    display: block
+    font-size: 0
+    color: transparent
+    cursor: pointer
+    border: 0
+    background: none
+    position: absolute
+    top: 50%
+    z-index: 2
+    transform: translateY(-50%)
+    &:focus
+        outline: 0
+    &:after 
+        content: ""
+        display: block
+        width: 16px
+        height: 16px
+
+        border-top: 2px solid black
+        border-left: 2px solid black
+
+.slick-prev
+    left: 0
+    transform: rotate(-45deg)
+
+.slick-next
+    right: 0
+    transform: rotate(135deg)

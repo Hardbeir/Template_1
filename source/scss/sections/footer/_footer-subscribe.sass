@@ -1,0 +1,35 @@
+.subscribe
+    width: 100%
+    max-width: 380px
+    display: flex
+    &__input
+        width: 60%
+        height: 18.5px
+        padding: 12px
+        line-height: 1.1
+        background: white
+        font-size: 15px
+        border-right: 0
+        font-style: italic 
+        border: 1px solid $cl_stat
+        &::placeholder
+            color: $color_text
+        &:focus
+           outline: 0
+           border-color: $color_text
+    &__btn
+        width: 40%
+        height: 44px 
+        padding: 12px 30px
+        line-height: 1.1
+        background-color: $cl_stat
+        border: 0
+        font-size: 14px
+        font-weight: 700
+        cursor: pointer 
+        color: white
+        transition: background .2s linear
+        &:hover 
+            background-color: $color_text
+        &:focus
+            outline: 0

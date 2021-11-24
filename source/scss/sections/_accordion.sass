@@ -1,0 +1,43 @@
+.accordion
+    &__item
+        margin-bottom: 10px
+        border: 1px solid grey 
+        &.active  .accordion__content
+            display: block
+        &.active  .accordion__header
+            border-bottom-color: grey 
+            &:after
+                transform: translateY(-50%) rotate(-45deg)
+                margin-top: 5px
+    &__header
+        padding: 15px 20px 15px 65px
+        position: relative
+        border-bottom: 1px solid transparent
+        cursor: pointer
+        &:after     
+            content: ""
+            display: block
+            width: 16px
+            height: 16px
+
+            border-top: 2px solid grey  
+            border-right: 2px solid grey
+            
+            position: absolute
+            top: 50%
+            right: 20px
+            z-index: 2
+
+            transform: translateY(-50%) rotate(135deg)
+    &__content
+        padding: 15px 20px
+        display: none
+    &__icon
+        position: absolute
+        top: 50%
+        left: 20px
+        z-index: 2
+        transform: translateY(-50%)
+    &__title
+        font-size: 14px
+    

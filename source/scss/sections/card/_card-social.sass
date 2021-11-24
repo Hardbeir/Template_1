@@ -1,0 +1,21 @@
+.social
+    display: flex
+    justify-content: center
+    &__item
+        padding: 12px 10px
+        width: 40px
+        height: 40px
+
+        background-color: $color_text
+        border-right: 1px solid $cl_stat
+
+        text-decoration: none
+        color: $cl_stat
+        font-size: 30px
+        line-height: 1.5
+        transition: background 0.1 liner, color 0.1 linear
+        &:last-child
+            border-right: 0
+        &:hover
+            background-color: $cl_stat
+            color: $color_text

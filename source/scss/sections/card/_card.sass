@@ -1,0 +1,53 @@
+.card
+    display: flex
+    justify-content: space-between
+    margin-top: 80px -15px 0
+    &__item
+        width: 33.33333%
+        padding: 0 15px
+    &__inner
+        width: 350px
+        position: relative
+        &:hover
+            & .card__img
+                transform: translate3d(-10px, -10px, 0)
+                background-color: grey 
+        &:hover
+            & .card__img img
+                opacity: 0.1 
+            & .card__text
+                opacity: 1
+    &__inner
+        background-color: gray
+        position: relative
+    &__text 
+        width: 100%
+        font-size: 18px
+        text-align: center
+        position: absolute
+        top: 50%
+        left: -2%
+        color: #ffffff
+        z-index: 2
+        transform: translate3d(0, -50%, 0)
+        opacity: 0
+        transition: opacity 0.2s linear
+    &__img
+        background: linear-gradient(to bottom, $color_text, $cl_stat)
+        transition: transform 0.2s linear
+        & img 
+            display: block
+            max-width: 100%
+            height: auto
+            transition: opacity 0.2s linear
+    &__info
+        margin-top: 20px
+        text-align: center
+    &__name
+        font-size: 14px
+        text-transform: uppercase
+    &__prof
+        font-size: 15px
+        font-weight: 15
+        font-style: italic
+
